@@ -45,7 +45,7 @@ wm-restack = bspwm
 # Top modules
 bottom-left = rofi-run title cpu memory temperature
 bottom-center = i3
-bottom-right = alsa network-detail battery date
+bottom-right = spotify alsa network-detail battery date
 
 
 systray-top = none

@@ -342,3 +342,14 @@ content-foreground = ${colors.background}
 content-padding = 3
 
 click-left = ~/.config/polybar/scripts/rofi_run
+
+[module/spotify]
+type = custom/script
+interval = 1
+format = <label>
+exec = python /home/yashkarandikar/.config/polybar/spotify_status.py -f '{play_pause} {artist}: {song}'
+format-underline = #1db954
+;control players (optional)
+click-left = playerctl --player=spotify play-pause 
+;click-right = playerctl --player=spotify next 
+;click-middle = playerctl --player=spotify previous 
