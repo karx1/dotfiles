@@ -346,6 +346,7 @@ click-left = ~/.config/polybar/scripts/rofi_run
 [module/spotify]
 type = custom/script
 interval = 1
+format-prefix = " "
 format = <label>
 exec = python /home/yashkarandikar/.config/polybar/spotify_status.py -f '{play_pause} {artist}: {song}'
 format-underline = #1db954
