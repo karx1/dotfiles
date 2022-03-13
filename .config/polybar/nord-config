@@ -43,7 +43,7 @@ wm-restack = bspwm
 # clipmenu-widget: showing clipmenu service
 
 # Top modules
-bottom-left = rofi-run title cpu memory temperature
+bottom-left = rofi-run title cpu memory backlight
 bottom-center = i3
 bottom-right = spotify alsa network-detail battery date
 
