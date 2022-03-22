@@ -7,6 +7,6 @@ else
   then 
     echo -e "\uf293"
   fi
-  echo -e "%{F#2193ff}\uf293"
+  echo -e "%{F#81a1c1}\uf293"
 fi
 
