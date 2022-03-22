@@ -361,4 +361,4 @@ type = custom/script
 exec = ~/.config/polybar/bluetooth.sh
 interval = 2
 format-underline = #2193ff
-;click-left = exec blueberry
+click-left = exec st -e bluetoothctl
