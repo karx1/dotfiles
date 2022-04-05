@@ -5,6 +5,7 @@ set softtabstop=4
 set showtabline=2
 set number
 set expandtab
+set encoding=UTF-8
 
 " install vim-plug if it's not installed already
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -17,6 +18,7 @@ endif
 call plug#begin()
 Plug 'ycm-core/YouCompleteMe'
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Keybindings for tab management
