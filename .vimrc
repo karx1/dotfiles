@@ -19,6 +19,7 @@ call plug#begin()
 Plug 'ycm-core/YouCompleteMe'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'alx741/vim-rustfmt'
 call plug#end()
 
 " Keybindings for tab management
