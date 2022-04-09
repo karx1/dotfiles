@@ -39,3 +39,7 @@ let g:NERDTreeDirArrowCollapsible = '<'
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
 command Dw :w !sudo tee %
+
+" YCM settings
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_rust_toolchain_root = "/home/yashkarandikar/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/"
