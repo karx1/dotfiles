@@ -20,7 +20,10 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'alx741/vim-rustfmt'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
+
+colorscheme nord
 
 " Keybindings for tab management
 map <C-z> :tabp<CR>
