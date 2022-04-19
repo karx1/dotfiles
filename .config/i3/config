@@ -36,6 +36,7 @@ exec ~/.fehbg &
 # bindsym $mod+s exec scrot -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
 bindsym $mod+s exec flameshot gui
 bindsym $mod+e layout toggle split
+bindsym --release $mod+c exec --no-startup-id xcolor | head -c -1 | xclip -selection clip
 focus_follows_mouse no
 
 for_window [class="^.*"] border pixel 3
