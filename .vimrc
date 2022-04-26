@@ -21,6 +21,7 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'alx741/vim-rustfmt'
 Plug 'arcticicestudio/nord-vim'
+Plug 'spf13/vim-autoclose'
 call plug#end()
 
 colorscheme nord
@@ -46,3 +47,6 @@ command Dw :w !sudo tee %
 " YCM settings
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_rust_toolchain_root = "/home/yashkarandikar/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/"
+
+" Don't autoclose quotes in vim files
+let g:autoclose_vim_commentmode = 1
