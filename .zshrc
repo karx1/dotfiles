@@ -23,12 +23,13 @@ autoload -Uz compinit && compinit
 setopt correct
 
 PATH=$PATH:/home/yashkarandikar/bin
+PATH=$PATH:/home/yashkarandikar/.local/bin
 PATH=$PATH:/home/yashkarandikar/.cargo/bin
 autoload -U +X bashcompinit && bashcompinit
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
 
 export EDITOR=vim
