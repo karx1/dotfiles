@@ -22,9 +22,14 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'alx741/vim-rustfmt'
 Plug 'arcticicestudio/nord-vim'
 Plug 'spf13/vim-autoclose'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 colorscheme nord
+
+" airline should detect the theme automatically but just in case
+let g:airline_theme='nord'
 
 " Keybindings for tab management
 map <C-z> :tabp<CR>
