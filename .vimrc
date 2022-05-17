@@ -45,6 +45,9 @@ let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = '<'
 
+" vimagit settings
+map <C-g> :Magit<CR>
+
 " save/quit
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
