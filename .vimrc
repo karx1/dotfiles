@@ -46,7 +46,7 @@ let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = '<'
 
 " vimagit settings
-map <C-g> :Magit<CR>
+map <C-g> :call magit#show_magit('h')<CR>
 
 " save/quit
 nnoremap <C-s> :w<CR>
