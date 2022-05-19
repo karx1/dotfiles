@@ -45,9 +45,6 @@ let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = '<'
 
-" vimagit settings
-map <C-g> :call magit#show_magit('h')<CR>
-
 " airline settings
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
