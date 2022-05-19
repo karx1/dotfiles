@@ -24,7 +24,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'spf13/vim-autoclose'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'jreybert/vimagit'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 colorscheme nord
