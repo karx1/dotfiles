@@ -25,6 +25,7 @@ Plug 'spf13/vim-autoclose'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
+Plug 'valloric/MatchTagAlways'
 call plug#end()
 
 colorscheme nord
