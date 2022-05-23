@@ -61,3 +61,7 @@ let g:ycm_rust_toolchain_root = "/home/yashkarandikar/.rustup/toolchains/nightly
 
 " Don't autoclose quotes in vim files
 let g:autoclose_vim_commentmode = 1
+
+" smart search
+set ignorecase
+set smartcase
