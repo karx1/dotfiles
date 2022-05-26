@@ -33,3 +33,5 @@ autoload -U +X bashcompinit && bashcompinit
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
 
 export EDITOR=vim
+
+eval $(thefuck --alias)
