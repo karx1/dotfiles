@@ -53,7 +53,6 @@ let g:airline#extensions#tabline#enabled = 1
 " save/quit
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
-command Dw :w !sudo tee %
 
 " YCM settings
 let g:ycm_autoclose_preview_window_after_completion = 1
