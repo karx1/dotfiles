@@ -83,8 +83,7 @@ bindsym $mod+Shift+q kill
 # A more modern dmenu replacement is rofi:
 bindsym $mod+space exec "rofi -modi drun,run -show drun -show-icons"
 bindsym $mod+e exec rofimoji
-# bindsym $mod+m exec "rofimoji --files devanagari --action type"
-bindsym $mod+m exec "rofimoji --files devanagari --action clipboard"
+bindsym $mod+m exec "rofimoji --files /home/yashkarandikar/.config/devanagari.csv --action clipboard"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
