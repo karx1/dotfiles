@@ -1,3 +1,4 @@
 action clipboard
 files [emojis, math]
-no-frecency=True
+no-frecency True
+max-recent 0
