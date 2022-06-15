@@ -97,7 +97,7 @@ label-focused-padding = 2
 label-focused-foreground = ${colors.nord7}
 label-focused-underline = ${colors.nord7}
 
-label-unfocused = 
+label-unfocused =
 
 label-urgent = %name%
 label-urgent-foreground = ${colors.urgent}
@@ -362,3 +362,9 @@ exec = ~/.config/polybar/bluetooth.sh
 interval = 2
 format-underline = #81a1c1
 click-left = exec alacritty -e bluetoothctl
+
+[module/wireguard]
+type = custom/script
+exec = ~/.config/polybar/polybar-wireguard
+tail = false
+interval = 2
