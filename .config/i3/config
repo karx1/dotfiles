@@ -36,9 +36,11 @@ exec ~/.fehbg &
 # bindsym $mod+s exec scrot -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
 bindsym $mod+s exec flameshot gui
 bindsym --release $mod+c exec --no-startup-id xcolor | head -c -1 | xclip -selection clip
+bindsym $mod+g exec galculator
 focus_follows_mouse no
 
 for_window [class="^.*"] border pixel 3
+for_window [class="Galculator" instance="galculator"] floating enable
 
 set $Locker i3lock -i ~/Downloads/wallpaper.png && sleep 1
 
