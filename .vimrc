@@ -26,7 +26,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'valloric/MatchTagAlways'
+Plug 'preservim/nerdcommenter'
 call plug#end()
+
 
 colorscheme nord
 
@@ -64,3 +66,10 @@ let g:autoclose_vim_commentmode = 1
 " smart search
 set ignorecase
 set smartcase
+
+" nerdcommenter settings
+filetype plugin on
+let g:NERDCreateDefaultMappings = 0
+let g:NERDSpaceDelims = 1
+nnoremap <C-_> :call nerdcommenter#Comment('n', 'invert')<CR>
+nnoremap <C-a> :call nerdcommenter#Comment('n', 'append')<CR>
