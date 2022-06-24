@@ -6,6 +6,8 @@ set showtabline=2
 set number
 set expandtab
 set encoding=UTF-8
+set hlsearch
+set incsearch
 
 " install vim-plug if it's not installed already
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -40,6 +42,9 @@ let g:airline_theme='nord'
 map <C-z> :tabp<CR>
 map <C-x> :tabn<CR>
 map <C-c> :tabnew<CR>
+
+" keybinding for removing search highlights
+nnoremap \\ :noh<CR>
 
 " NERDTree settings
 nnoremap <C-t> :NERDTreeToggle<CR>
