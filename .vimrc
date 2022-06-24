@@ -27,6 +27,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'valloric/MatchTagAlways'
 Plug 'preservim/nerdcommenter'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " requires nodejs and yarn installed
 call plug#end()
 
 
@@ -73,3 +74,6 @@ let g:NERDCreateDefaultMappings = 0
 let g:NERDSpaceDelims = 1
 nnoremap <C-_> :call nerdcommenter#Comment('n', 'invert')<CR>
 nnoremap <C-S-a> :call nerdcommenter#Comment('n', 'append')<CR>
+
+" markdown preview settings
+nnoremap <C-p> :MarkdownPreviewToggle<CR>
