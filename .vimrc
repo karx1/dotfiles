@@ -8,6 +8,7 @@ set expandtab
 set encoding=UTF-8
 set hlsearch
 set incsearch
+set cursorline
 
 " install vim-plug if it's not installed already
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
