@@ -21,6 +21,7 @@ antigen apply
 autoload -Uz compinit && compinit
 
 setopt correct
+set -o vi
 
 PATH=$PATH:/home/yashkarandikar/bin
 PATH=$PATH:/home/yashkarandikar/.local/bin
