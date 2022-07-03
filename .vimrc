@@ -79,6 +79,7 @@ filetype plugin on
 let g:NERDCreateDefaultMappings = 0
 let g:NERDSpaceDelims = 1
 nnoremap <C-_> :call nerdcommenter#Comment('n', 'invert')<CR>
+nnoremap <C-B> :call nerdcommenter#Comment('x', 'invert')<CR>
 nnoremap <C-S-a> :call nerdcommenter#Comment('n', 'append')<CR>
 
 " markdown preview settings
