@@ -84,3 +84,5 @@ nnoremap <C-S-a> :call nerdcommenter#Comment('n', 'append')<CR>
 
 " markdown preview settings
 nnoremap <C-p> :MarkdownPreviewToggle<CR>
+
+nnoremap ` ~
