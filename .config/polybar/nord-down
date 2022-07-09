@@ -99,7 +99,7 @@ interval = 3
 
 format-connected = <label-connected>
 
-label-connected =  %downspeed:9%   %upspeed:9%
+label-connected = %downspeed:9% %upspeed:9%
 label-connected-foreground = ${colors.success}
 
 [module/temperature]
