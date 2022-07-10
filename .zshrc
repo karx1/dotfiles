@@ -30,6 +30,7 @@ autoload -U +X bashcompinit && bashcompinit
 
 alias mosh="mosh --predict=experimental"
 alias sys="sudo systemctl"
+alias sysu="systemctl --user"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
