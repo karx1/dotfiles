@@ -391,7 +391,7 @@ click-left = playerctl next -p spotify
 type = custom/script
 exec = ~/.config/polybar/bluetooth.sh
 interval = 2
-; format-underline = #81a1c1
+format-underline = #81a1c1
 click-left = exec alacritty -e bluetoothctl
 
 [module/wireguard]
