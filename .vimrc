@@ -31,6 +31,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'valloric/MatchTagAlways'
 Plug 'preservim/nerdcommenter'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " requires nodejs and yarn installed
+Plug 'alvan/vim-closetag'
 call plug#end()
 
 
