@@ -23,6 +23,7 @@ config_file="/tmp/polybar_cava_config"
 echo "
 [general]
 bars = 10
+lower_cutoff_freq = 25
 
 [output]
 method = raw
