@@ -29,6 +29,15 @@ method = raw
 raw_target = $pipe
 data_format = ascii
 ascii_max_range = 7
+
+[smoothing]
+monstercat = 1
+waves = 1
+
+[eq]
+2 = 0
+3 = 0
+4 = 0
 " > $config_file
 
 # run cava in the background
