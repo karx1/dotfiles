@@ -24,6 +24,7 @@ echo "
 [general]
 bars = 10
 lower_cutoff_freq = 12
+sleep_timer = 10
 
 [output]
 method = raw
