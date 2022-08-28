@@ -34,7 +34,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " requir
 Plug 'alvan/vim-closetag'
 call plug#end()
 
-
 colorscheme nord
 
 " airline should detect the theme automatically but just in case
@@ -67,6 +66,8 @@ nnoremap <C-q> :q<CR>
 " YCM settings
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_rust_toolchain_root = "/home/yashkarandikar/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/"
+let g:ycm_clear_inlay_hints_in_insert_mode = 1
+nnoremap <C-h> <Plug>(YCMToggleInlayHints)
 
 " Don't autoclose quotes in vim files
 let g:autoclose_vim_commentmode = 1
