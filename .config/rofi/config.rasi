@@ -1,1 +1,4 @@
 @theme "nord"
+configuration {
+    font: "Cascadia Code PL 12";
+}
