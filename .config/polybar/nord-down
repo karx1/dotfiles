@@ -103,7 +103,7 @@ format-connected-foreground = ${colors.success}
 label-connected = %essid% %downspeed:9% %upspeed:9%
 
 format-disconnected = <label-disconnected>
-format-disconnected-foreground = ${colors.error}
+format-disconnected-foreground = ${colors.urgent}
 
 label-disconnected = 
 
