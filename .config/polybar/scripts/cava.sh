@@ -22,7 +22,7 @@ mkfifo $pipe
 config_file="/tmp/polybar_cava_config"
 echo "
 [general]
-bars = 10
+bars = 50
 lower_cutoff_freq = 12
 sleep_timer = 10
 
@@ -33,13 +33,8 @@ data_format = ascii
 ascii_max_range = 7
 
 [smoothing]
-monstercat = 1
-waves = 1
-
-[eq]
-2 = 0
-3 = 0
-4 = 0
+; monstercat = 1
+; waves = 1
 " > $config_file
 
 # run cava in the background

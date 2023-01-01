@@ -124,7 +124,6 @@ date-alt = %I:%M
 
 format = <label>
 label =  %date%
-label-margin = 1
 label-underline = ${colors.nord8}
 
 [module/battery]

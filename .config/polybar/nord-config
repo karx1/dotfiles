@@ -43,9 +43,13 @@ wm-restack = bspwm
 # clipmenu-widget: showing clipmenu service
 
 # Top modules
-bottom-left = powermenu title bluetooth wireguard cpu memory backlight cava
+bottom-left = powermenu title bluetooth wireguard
 bottom-center = i3
-bottom-right = spotify-prev spotify-play-pause spotify-next spotify alsa network-detail battery date
+bottom-right = alsa battery date
+
+top-left = cpu memory backlight
+top-center = cava
+top-right = spotify-prev spotify-play-pause spotify-next spotify network-detail
 
 
 systray-top = none
