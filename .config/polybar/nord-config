@@ -43,7 +43,7 @@ wm-restack = bspwm
 # clipmenu-widget: showing clipmenu service
 
 # Top modules
-bottom-left = powermenu title bluetooth wireguard
+bottom-left = powermenu title bluetooth wireguard redshift
 bottom-center = i3
 bottom-right = alsa battery date
 

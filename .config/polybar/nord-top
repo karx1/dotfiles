@@ -220,7 +220,7 @@ format-underline = ${colors.nord9}
 
 ramp-0 = 
 
-label = %{A1:$HOME/.config/polybar/scripts/toggle-redshift.sh:}%percentage%%%{A}
+label = %percentage%%
 ramp-foreground = ${colors.nord9}
 
 [module/mpd]
@@ -406,3 +406,12 @@ type = custom/script
 exec = ~/.config/polybar/polybar-wireguard
 tail = false
 interval = 2
+
+[module/redshift]
+type = custom/script
+format-prefix = " "
+format-prefix-foreground = ${colors.urgent}
+format-underline = ${colors.urgent}
+exec = $HOME/.config/polybar/scripts/redshift.sh period 
+click-left = $HOME/.config/polybar/scripts/redshift.sh toggle
+interval = 1
