@@ -47,7 +47,7 @@ bottom-left = powermenu title bluetooth wireguard redshift
 bottom-center = i3
 bottom-right = alsa battery date
 
-top-left = cpu memory backlight
+top-left = cpu memory diskusage backlight
 top-center = cava
 top-right = spotify-prev spotify-play-pause spotify-next spotify network-detail
 

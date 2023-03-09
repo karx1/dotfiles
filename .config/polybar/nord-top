@@ -415,3 +415,11 @@ format-underline = ${colors.urgent}
 exec = $HOME/.config/polybar/scripts/redshift.sh period 
 click-left = $HOME/.config/polybar/scripts/redshift.sh toggle
 interval = 1
+
+[module/diskusage]
+type=custom/script
+format-prefix = " "
+format-prefix-foreground = ${colors.notify}
+format-underline = ${colors.notify}
+exec = $HOME/.config/polybar/scripts/diskusage.sh
+interval = 30
