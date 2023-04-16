@@ -23,6 +23,9 @@
     spacing: 0px;
     text-color: @nord4;
 }
+window {
+    border-radius: 15px;
+}
 #inputbar {
     text-color: @nord3;
     padding: 6px;
@@ -33,6 +36,7 @@
     background-color: @nord3;
     text-color: @nord4;
     padding: 5px;
+    border-radius: 10px;
 }
 #message {
     border: 0px 0px 1px;
