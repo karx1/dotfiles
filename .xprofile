@@ -1,4 +1,4 @@
-xcompmgr -sCF &
+xcompmgr &
 export NO_AT_BRIDGE=1
 eval $(dbus-launch --sh-syntax)
 export DBUS_SESSION_BUS_ADDRESS
