@@ -69,6 +69,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -79,11 +80,15 @@ bindsym $mod+Shift+Return exec firefox-developer-edition
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# Rofi stuff: Raw rofi, rofimoji, rofi-calc
+# Rofi stuff: Raw rofi, rofimoji
 bindsym $mod+space exec "rofi -modi drun,run -show drun -show-icons"
 bindsym $mod+e exec rofimoji
 bindsym $mod+m exec "rofimoji --files /home/yashkarandikar/.config/devanagari.csv --action clipboard"
+
+# Rofi calculator
 bindsym $mod+g exec "rofi -show calc -modi calc -no-show-match -no-sort"
+bindsym XF86Calculator exec "rofi -show calc -modi calc -no-show-match -no-sort"
+
 
 # change focus
 bindsym $mod+j focus left
