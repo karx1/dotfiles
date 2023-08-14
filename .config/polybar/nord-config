@@ -45,7 +45,7 @@ wm-restack = bspwm
 # Top modules
 bottom-left = powermenu title bluetooth redshift
 bottom-center = i3
-bottom-right = alsa battery date
+bottom-right = pulseaudio battery date
 
 top-left = cpu memory diskusage backlight
 top-center = cava

@@ -173,14 +173,8 @@ label-indicator-on-capslock-underline = ${colors.warning}
 ; Icons
 layout-icon-default = 
 
-[module/alsa]
-type = internal/alsa
-
-master-soundcard = ${config.master-soundcard}
-speaker-soundcard = ${config.speaker-soundcard}
-headphone-soundcard = ${config.headphone-soundcard}
-
-master-mixer = ${config.master-mixer}
+[module/pulseaudio]
+type=internal/pulseaudio
 
 ; Format 
 format-volume = <ramp-volume> <label-volume>
@@ -200,6 +194,9 @@ ramp-volume-2-foreground = ${colors.urgent}
 ramp-headphones-0 = 
 
 ramp-volume-foreground = ${colors.nord7}
+
+click-right = pavucontrol
+
 
 [module/backlight]
 type = internal/backlight
