@@ -30,12 +30,12 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/Downloads/wal
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-exec xinput set-prop 12 285 1 &
-exec xinput set-prop "DLL06FE:00 04F3:300F Touchpad" "libinput Natural Scrolling Enabled" 1
+exec --no-startup-id xinput set-prop 12 285 1 &
+exec --no-startup-id xinput set-prop "DLL06FE:00 04F3:300F Touchpad" "libinput Natural Scrolling Enabled" 1
 # exec xrandr --output eDP1 --scale 0.8x0.8
-exec ~/.fehbg &
+exec --no-startup-id ~/.fehbg &
 # bindsym $mod+s exec scrot -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
-bindsym $mod+s exec flameshot gui
+bindsym $mod+s exec --no-startup-id flameshot gui
 bindsym --release $mod+c exec --no-startup-id xcolor | head -c -1 | xclip -selection clip
 focus_follows_mouse no
 
@@ -77,20 +77,20 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+Return exec firefox-developer-edition
+bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Shift+Return exec MOZ_USE_XINPUT2=1 firefox-developer-edition
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # Rofi stuff: Raw rofi, rofimoji
-bindsym $mod+space exec "rofi -modi drun,run -show drun -show-icons"
-bindsym $mod+e exec rofimoji
-bindsym $mod+m exec "rofimoji --files /home/yashkarandikar/.config/devanagari.csv --action clipboard"
+bindsym $mod+space exec --no-startup-id "rofi -modi drun,run -show drun -show-icons"
+bindsym $mod+e exec --no-startup-id rofimoji
+bindsym $mod+m exec --no-startup-id "rofimoji --files /home/yashkarandikar/.config/devanagari.csv --action clipboard"
 
 # Rofi calculator
-bindsym $mod+g exec "rofi -show calc -modi calc -no-show-match -no-sort"
-bindsym XF86Calculator exec "rofi -show calc -modi calc -no-show-match -no-sort"
+bindsym $mod+g exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort"
+bindsym XF86Calculator exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort"
 
 
 # change focus
@@ -179,7 +179,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # networkmanager dmenu plugin
 bindsym $mod+n exec --no-startup-id networkmanager_dmenu
@@ -231,5 +231,5 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 #	}
 #}
 
-exec_always systemctl --user start redshift
+exec_always --no-startup-id systemctl --user start redshift
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh dark
