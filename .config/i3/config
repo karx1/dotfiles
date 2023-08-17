@@ -32,6 +32,7 @@ exec --no-startup-id nm-applet
 
 exec --no-startup-id xinput set-prop 12 285 1 &
 exec --no-startup-id xinput set-prop "DLL06FE:00 04F3:300F Touchpad" "libinput Natural Scrolling Enabled" 1
+exec --no-startup-id xinput set-prop "DLL06FE:00 04F3:300F Touchpad" "libinput Tapping Enabled" 1
 # exec xrandr --output eDP1 --scale 0.8x0.8
 exec --no-startup-id ~/.fehbg &
 # bindsym $mod+s exec scrot -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
