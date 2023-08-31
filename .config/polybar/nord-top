@@ -144,12 +144,11 @@ animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
 
-format-discharging = <ramp-capacity> <label-discharging>
+format-discharging = %{F#A3BE8C}<ramp-capacity>%{F-} <label-discharging>
 format-discharging-underline = ${colors.success}
 
-format-low = <ramp-capacity> <label-discharging>
+format-low = %{F#D08770}<ramp-capacity>%{F-} <label-discharging>
 format-low-underline = ${colors.warning}
-format-low-foreground = ${colors.warning}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
