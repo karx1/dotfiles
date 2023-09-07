@@ -147,6 +147,9 @@ animation-charging-framerate = 750
 format-discharging = %{F#A3BE8C}<ramp-capacity>%{F-} <label-discharging>
 format-discharging-underline = ${colors.success}
 
+label-discharging=%percentage%% (%time% left)
+label-low=%percentage%% (%time% left)
+
 format-low = %{F#D08770}<ramp-capacity>%{F-} <label-discharging>
 format-low-underline = ${colors.warning}
 
