@@ -367,6 +367,7 @@ format-prefix = " "
 format = <label>
 format-underline = #1db954
 exec = ~/.config/polybar/scripts/scroll_spotify_status.sh
+click-left = spotify && i3-msg "[urgent=latest] focus"
 
 [module/spotify-prev]
 type = custom/script
