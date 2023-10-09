@@ -3,3 +3,5 @@
 	name = Yash Karandikar
 [core]
 	editor = vim
+[pull]
+	rebase = true
