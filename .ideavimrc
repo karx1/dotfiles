@@ -1,0 +1,20 @@
+" basic vim settings (tab width, line numbers, etc)
+set number
+set hlsearch
+set incsearch
+set relativenumber
+
+" Keybindings for tab management
+map <C-z> :tabp<CR>
+map <C-x> :tabn<CR>
+map <C-c> :tabnew<CR>
+
+" save/quit
+nnoremap <C-s> :w<CR>
+nnoremap <C-q> :q<CR>
+
+" smart search
+set ignorecase
+set smartcase
+
+nnoremap ` ~
