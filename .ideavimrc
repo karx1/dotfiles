@@ -9,6 +9,9 @@ map <C-z> :tabp<CR>
 map <C-x> :tabn<CR>
 map <C-c> :tabnew<CR>
 
+" keybinding for removing search highlights
+nnoremap \\ :noh<CR>
+
 " save/quit
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
