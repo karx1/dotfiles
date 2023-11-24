@@ -41,6 +41,9 @@ bindsym $mod+s exec --no-startup-id flameshot gui
 bindsym --release $mod+c exec --no-startup-id xcolor | head -c -1 | xclip -selection clip
 focus_follows_mouse no
 
+# touchpad gestures
+exec --no-startup-id libinput-gestures-setup start
+
 for_window [class="^.*"] border pixel 3
 
 set $Locker i3lock -i ~/Downloads/wallpaper.png && sleep 1
