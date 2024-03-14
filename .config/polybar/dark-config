@@ -5,6 +5,9 @@ include-file = $HOME/.config/polybar/nord-top
 include-file = $HOME/.config/polybar/nord-down
 include-file = $HOME/.config/polybar/nord-config
 
+[settings]
+screenchange-reload = true
+
 [bar/base]
 theme = dark
 monitor = ${config.monitor}
