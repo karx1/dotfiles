@@ -20,7 +20,7 @@ endif
 
 " install plugins
 call plug#begin()
-Plug 'ycm-core/YouCompleteMe'
+Plug 'yegappan/lsp'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'alx741/vim-rustfmt'
@@ -66,10 +66,36 @@ nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
 
 " YCM settings
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_rust_toolchain_root = "/home/yashkarandikar/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/"
-let g:ycm_clear_inlay_hints_in_insert_mode = 1
-nnoremap <C-h> <Plug>(YCMToggleInlayHints)
+" let g:ycm_autoclose_preview_window_after_completion = 1
+" let g:ycm_rust_toolchain_root = "/home/yashkarandikar/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/"
+" let g:ycm_clear_inlay_hints_in_insert_mode = 1
+" nnoremap <C-h> <Plug>(YCMToggleInlayHints)
+
+" lsp/completer settings
+let lspOpts = #{filterCompletionDuplicates: v:true}
+autocmd User LspSetup call LspOptionsSet(lspOpts)
+
+let lspServers = [#{
+	\    name: 'rustlang',
+	\    filetype: ['rust'],
+	\    path: '/usr/lib/rustup/bin/rust-analyzer',
+	\    args: [],
+	\    syncInit: v:true,
+    \    initializationOptions: #{
+    \       inlayHints: #{
+    \           typeHints: #{
+    \               enable: v:true
+    \           },
+    \           parameterHints: #{
+    \               enable: v:true
+    \           }
+    \       },
+    \    }
+	\  }]
+autocmd User LspSetup call LspAddServer(lspServers)
+" tab completion
+inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
 
 " Don't autoclose quotes in vim files
 let g:autoclose_vim_commentmode = 1
