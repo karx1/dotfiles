@@ -65,12 +65,6 @@ let g:airline#extensions#tabline#enabled = 1
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
 
-" YCM settings
-" let g:ycm_autoclose_preview_window_after_completion = 1
-" let g:ycm_rust_toolchain_root = "/home/yashkarandikar/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/"
-" let g:ycm_clear_inlay_hints_in_insert_mode = 1
-" nnoremap <C-h> <Plug>(YCMToggleInlayHints)
-
 " lsp/completer settings
 let lspOpts = #{filterCompletionDuplicates: v:true}
 autocmd User LspSetup call LspOptionsSet(lspOpts)
