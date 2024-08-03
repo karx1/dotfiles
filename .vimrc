@@ -75,12 +75,14 @@ nnoremap <C-q> :q<CR>
 let lspOpts = #{filterCompletionDuplicates: v:true}
 autocmd User LspSetup call LspOptionsSet(lspOpts)
 
+" note: for the java server to work, the java version must be greater than
+" java 17 but less than java 21.
 let lspServers = [#{
-	\    name: 'rustlang',
-	\    filetype: ['rust'],
-	\    path: '/usr/lib/rustup/bin/rust-analyzer',
-	\    args: [],
-	\    syncInit: v:true,
+    \    name: 'rustlang',
+    \    filetype: ['rust'],
+    \    path: '/usr/lib/rustup/bin/rust-analyzer',
+    \    args: [],
+    \    syncInit: v:true,
     \    initializationOptions: #{
     \       inlayHints: #{
     \           typeHints: #{
@@ -91,7 +93,14 @@ let lspServers = [#{
     \           }
     \       },
     \    }
-	\  }]
+    \  },
+    \ #{
+    \    name: 'jdtls',
+    \    filetype: ['java'],
+    \    path: '/sbin/jdtls',
+    \    args: [],
+    \    syncInit: v:true,
+    \ }]
 autocmd User LspSetup call LspAddServer(lspServers)
 " tab completion
 inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
