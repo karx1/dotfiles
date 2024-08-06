@@ -78,6 +78,9 @@ let lspServers = [#{
     \    args: [],
     \    syncInit: v:true,
     \    initializationOptions: #{
+    \       check: #{
+    \           command: "clippy"
+    \       },
     \       inlayHints: #{
     \           typeHints: #{
     \               enable: v:true
