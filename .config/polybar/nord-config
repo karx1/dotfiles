@@ -3,7 +3,7 @@
 [config]
 # DPI value for HiDPI screen
 dpi = 82
-monitor = ${env:MONITOR:eDP1}
+monitor = ${env:MONITOR:eDP-1}
 
 # bar position, apply globally
 width = 100%
@@ -29,7 +29,7 @@ wm-restack = bspwm
 # bspwm: bspwm workspace icons
 # workspace-name: i3 current workspace name, need to be in the format like "1:Home"
 # title: title of the active window
-# network-detail: Download and upload speed 
+# network-detail: Download and upload speed
 # weather: Display openweather info
 # powermenu: menu to control system power
 # info-hackspeed: Numper of characters clicked per minute
@@ -48,7 +48,7 @@ bottom-center = i3
 bottom-right = pulseaudio battery date
 
 top-left = cpu memory diskusage backlight
-top-center = cava
+# top-center = cava
 top-right = spotify-prev spotify-play-pause spotify-next spotify network-detail
 
 
@@ -63,7 +63,7 @@ line-size = 6
 # if some of them doesn't suit your environment, you can change
 # it from here.
 # network interface, check by `ip link show`
-interface = wlp1s0
+interface = wlo1
 
 # when the current battery capacity excess this value,
 # the full-capacity format will be displayed.
@@ -71,7 +71,7 @@ battery-full-at = 95
 
 # battery and adapter
 battery-bat = BAT0
-battery-adp = AC
+battery-adp = ADP1
 
 # soundcard setting
 master-soundcard = default

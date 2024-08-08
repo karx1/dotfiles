@@ -30,9 +30,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/Downloads/wal
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-exec --no-startup-id xinput set-prop 12 285 1 &
-exec --no-startup-id xinput set-prop "DLL06FE:00 04F3:300F Touchpad" "libinput Natural Scrolling Enabled" 1
-exec --no-startup-id xinput set-prop "DLL06FE:00 04F3:300F Touchpad" "libinput Tapping Enabled" 1
+exec --no-startup-id xinput set-prop "PNP0C50:00 04CA:00B1 Touchpad" "libinput Natural Scrolling Enabled" 1
+exec --no-startup-id xinput set-prop "PNP0C50:00 04CA:00B1 Touchpad" "libinput Tapping Enabled" 1
 exec --no-startup-id xinput set-prop "Microsoft Microsoft Ergonomic Mouse" "libinput Accel Speed" -0.25
 # exec xrandr --output eDP1 --scale 0.8x0.8
 exec --no-startup-id ~/.fehbg &
