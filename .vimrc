@@ -69,8 +69,7 @@ nnoremap <C-q> :q<CR>
 let lspOpts = #{filterCompletionDuplicates: v:true}
 autocmd User LspSetup call LspOptionsSet(lspOpts)
 
-" note: for the java server to work, the java version must be greater than
-" java 17 but less than java 21.
+" note: for the java server to work, the java version must be at least java 17.
 let lspServers = [#{
     \    name: 'rustlang',
     \    filetype: ['rust'],
@@ -99,6 +98,9 @@ let lspServers = [#{
     \    syncInit: v:true,
     \ }]
 autocmd User LspSetup call LspAddServer(lspServers)
+
+nnoremap <C-{> :LspCodeAction
+nnoremap <C-.> :LspDiag show
 " tab completion
 inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
