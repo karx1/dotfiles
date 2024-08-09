@@ -354,9 +354,9 @@ click-left = ~/.config/polybar/scripts/rofi_run
 ; exec = python /home/yashkarandikar/.config/polybar/spotify_status.py -f '{play_pause} {artist}: {song}'
 ; format-underline = #1db954
 ; control players (optional)
-; click-left = playerctl --player=spotify play-pause 
-; click-right = playerctl --player=spotify next 
-; click-middle = playerctl --player=spotify previous 
+; click-left = playerctl --player=spotify play-pause
+; click-right = playerctl --player=spotify next
+; click-middle = playerctl --player=spotify previous
 
 [module/spotify]
 type = custom/script
@@ -417,14 +417,15 @@ type = custom/script
 format-prefix = " "
 format-prefix-foreground = ${colors.urgent}
 format-underline = ${colors.urgent}
-exec = $HOME/.config/polybar/scripts/redshift.sh period 
+exec = $HOME/.config/polybar/scripts/redshift.sh period
 click-left = $HOME/.config/polybar/scripts/redshift.sh toggle
 interval = 1
 
 [module/diskusage]
-type=custom/script
-format-prefix = " "
-format-prefix-foreground = ${colors.notify}
-format-underline = ${colors.notify}
-exec = $HOME/.config/polybar/scripts/diskusage.sh
-interval = 30
+type=internal/fs
+interval=3600
+format-mounted-foreground = ${colors.notify}
+format-mounted-underline = ${colors.notify}
+format-mounted =  <label-mounted>
+label-mounted =  %percentage_free%%
+label-mounted-foreground = #FFFFFF
