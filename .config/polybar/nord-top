@@ -427,5 +427,5 @@ interval=3600
 format-mounted-foreground = ${colors.notify}
 format-mounted-underline = ${colors.notify}
 format-mounted =  <label-mounted>
-label-mounted =  %percentage_free%%
+label-mounted =  %percentage_used%%
 label-mounted-foreground = #FFFFFF
