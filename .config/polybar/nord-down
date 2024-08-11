@@ -132,12 +132,14 @@ warn-temperature = ${config.warn-temperature}
 
 ; Format
 format = <ramp> <label>
+format-underline = ${colors.success}
 format-warn = <label-warn>
 format-warn-background = ${colors.foreground}
+format-warn-underline = ${colors.urgent}
 
-label = %temperature-f%
+label = %temperature-c%
 
-label-warn =  %temperature-f%
+label-warn =  %temperature-c%
 label-warn-padding = 1
 label-warn-foreground = ${colors.urgent}
 label-warn-background = ${colors.foreground}
