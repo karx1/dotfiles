@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 checkIfRunning() {
   if [ $(systemctl --user is-active redshift) == "active" ]; then
     return 0
@@ -10,7 +9,6 @@ checkIfRunning() {
 }
 
 changeModeToggle() {
-
   if checkIfRunning ; then
     systemctl --user stop redshift
   else
@@ -26,7 +24,7 @@ case $1 in
     ;;
   period)
     if checkIfRunning ; then
-      CURRENT_PERIOD=$(systemctl --user status redshift 2> /dev/null  | grep "Period" | sed 's/.*: //')
+      CURRENT_PERIOD=$(systemctl --user status redshift 2> /dev/null  | grep "Period" | tail -1 | sed 's/.*: //')
       echo "$CURRENT_PERIOD"
     else
       echo "off"

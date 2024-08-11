@@ -419,7 +419,7 @@ format-prefix-foreground = ${colors.urgent}
 format-underline = ${colors.urgent}
 exec = $HOME/.config/polybar/scripts/redshift.sh period
 click-left = $HOME/.config/polybar/scripts/redshift.sh toggle
-interval = 1
+interval = 10
 
 [module/diskusage]
 type=internal/fs
