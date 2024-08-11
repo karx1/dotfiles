@@ -24,7 +24,7 @@ menu-0-1-exec = sudo shutdown -hr now
 menu-0-2 = 
 menu-0-2-foreground = ${colors.notify}
 menu-0-2-padding = 2
-menu-0-2-exec = i3lock -i ~/Downloads/wallpaper.png && sleep 1 
+menu-0-2-exec = i3lock -i ~/Downloads/wallpaper.png && sleep 1
 
 [module/cpu]
 type = internal/cpu
@@ -38,7 +38,7 @@ format-warn = <ramp-coreload> <label>
 format-warn-foreground = ${colors.warning}
 
 ramp-coreload-spacing = 1
-ramp-coreload-0 = ▁ 
+ramp-coreload-0 = ▁
 ramp-coreload-1 = ▂
 ramp-coreload-2 = ▃
 ramp-coreload-3 = ▄
@@ -107,7 +107,7 @@ interface = ${config.interface}
 interval = 3
 
 format-connected = %{A1:networkmanager_dmenu:}<ramp-signal> <label-connected>%{A}
-format-connected-foreground = ${colors.success} 
+format-connected-foreground = ${colors.success}
 
 label-connected = %essid% %downspeed:9% %upspeed:9%
 
