@@ -20,12 +20,12 @@ endif
 
 " install plugins
 call plug#begin()
+Plug 'spf13/vim-autoclose'
 Plug 'yegappan/lsp'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'alx741/vim-rustfmt'
 Plug 'arcticicestudio/nord-vim'
-Plug 'spf13/vim-autoclose'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
@@ -34,6 +34,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " requires nodejs and yarn installed
 Plug 'alvan/vim-closetag'
 Plug 'normen/vim-pio'
+Plug 'mhinz/vim-signify'
 call plug#end()
 
 colorscheme nord
@@ -122,5 +123,8 @@ nnoremap <C-S-a> :call nerdcommenter#Comment('n', 'append')<CR>
 
 " markdown preview settings
 nnoremap <C-p> :MarkdownPreviewToggle<CR>
+
+" vim-signify settings
+set updatetime=100
 
 nnoremap ` ~
