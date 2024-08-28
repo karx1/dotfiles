@@ -49,7 +49,7 @@ bottom-right = pulseaudio battery date
 
 top-left = cpu memory temperature diskusage backlight
 # top-center = cava
-top-right = spotify-prev spotify-play-pause spotify-next spotify network-detail
+top-right = spotify-prev spotify-play-pause spotify-next spotify-progress spotify network-detail
 
 
 systray-top = none

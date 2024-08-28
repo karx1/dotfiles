@@ -391,6 +391,12 @@ format = <label>
 ; format-underline = #1db954
 click-left = playerctl next -p spotify
 
+[module/spotify-progress]
+type = custom/script
+exec = ~/.config/polybar/scripts/get_spotify_progress.py
+format-underline = #1db954
+interval = 1
+
 [module/cava]
 type = custom/script
 tail = true
