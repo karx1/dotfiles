@@ -128,3 +128,6 @@ nnoremap <C-p> :MarkdownPreviewToggle<CR>
 set updatetime=100
 
 nnoremap ` ~
+
+au BufRead,BufNewFile *.java setlocal textwidth=100
+au BufRead,BufNewFile *.java setlocal colorcolumn=100
