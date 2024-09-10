@@ -129,5 +129,13 @@ set updatetime=100
 
 nnoremap ` ~
 
+" settings for editing java files
 au BufRead,BufNewFile *.java setlocal textwidth=100
 au BufRead,BufNewFile *.java setlocal colorcolumn=100
+
+" let java_highlight_functions = 1
+let java_highlight_all = 1
+highlight link javaScopeDecl Statement
+highlight link javaType Type
+" highlight link javaDocTags PreProc
+
