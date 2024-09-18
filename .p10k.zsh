@@ -35,6 +35,7 @@
     os_icon                 # os identifier
     dir                     # current directory
     vcs                     # git status
+    capslock                # caps lock module
     # =========================[ Line #2 ]=========================
     newline                 # \n
     # prompt_char           # prompt symbol
@@ -1585,6 +1586,13 @@
     # instant_prompt_example. This will give us the same `example` prompt segment in the instant
     # and regular prompts.
     prompt_example
+  }
+
+  function prompt_capslock() {
+      caps_lock_status=$(xset -q | sed -n 's/^.*Caps Lock:\s*\(\S*\).*$/\1/p')
+      if [[ $caps_lock_status == "on" ]]; then
+          p10k segment -f yellow -i '' -t 'caps lock'
+      fi
   }
 
   # User-defined prompt segments can be customized the same way as built-in segments.
