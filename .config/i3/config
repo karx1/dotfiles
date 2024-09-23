@@ -188,6 +188,8 @@ bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed 
 
 # networkmanager dmenu plugin
 bindsym $mod+n exec --no-startup-id networkmanager_dmenu
+# rofi bluetooth plugin
+bindsym $mod+b exec --no-startup-id rofi-bluetooth -i
 
 # Gap config
 gaps inner 5
