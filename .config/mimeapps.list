@@ -1,0 +1,11 @@
+[Default Applications]
+application/json=firefox-developer-edition.desktop;
+application/pdf=firefox-developer-edition.desktop;
+application/vnd.mozilla.xul+xml=firefox-developer-edition.desktop;
+application/x-xpinstall=firefox-developer-edition.desktop;
+application/xhtml+xml=firefox-developer-edition.desktop;
+text/html=firefox-developer-edition.desktop;
+text/mml=firefox-developer-edition.desktop;
+text/xml=firefox-developer-edition.desktop;
+x-scheme-handler/http=firefox-developer-edition.desktop;
+x-scheme-handler/https=firefox-developer-edition.desktop;
