@@ -71,6 +71,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86AudioPlay exec --no-startup-id playerctl -p spotify play-pause
 bindsym XF86AudioPause exec --no-startup-id playerctl -p spotify play-pause
 bindsym XF86AudioNext exec --no-startup-id playerctl -p spotify next
+bindsym Shift+XF86AudioPlay exec --no-startup-id playerctl -p spotify next
+bindsym Shift+XF86AudioPause exec --no-startup-id playerctl -p spotify next
 
 # Use brightnessctl to adjust backlight brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
