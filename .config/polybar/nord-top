@@ -150,7 +150,7 @@ format-discharging-underline = ${colors.success}
 label-discharging=%percentage%% (%time% left)
 label-low=%percentage%% (%time% left)
 
-format-low = %{F#D08770}<ramp-capacity>%{F-} <label-discharging>
+format-low = %{F#D08770}<ramp-capacity>%{F-} <label-low>
 format-low-underline = ${colors.warning}
 
 ramp-capacity-0 = 

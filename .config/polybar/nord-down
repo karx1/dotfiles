@@ -32,9 +32,10 @@ interval = 1
 
 format = <ramp-coreload> <label>
 label =  %percentage%%
+label-warn =  %percentage%%
 
 warn-percentage = 50
-format-warn = <ramp-coreload> <label>
+format-warn = <ramp-coreload> <label-warn>
 format-warn-foreground = ${colors.warning}
 
 ramp-coreload-spacing = 1
@@ -60,9 +61,10 @@ interval = 3
 format = <ramp-used> <label>
 
 label = %gb_used%/%gb_total%
+label-warn = %gb_used%/%gb_total%
 
 warn-percentage = 50
-format-warn = <ramp-used> <label>
+format-warn = <ramp-used> <label-warn>
 format-warn-foreground = ${colors.warning}
 
 ramp-used-foreground = ${colors.success}
