@@ -98,6 +98,16 @@ let lspServers = [#{
     \    path: '/sbin/jdtls',
     \    args: [],
     \    syncInit: v:true,
+    \ },
+    \ #{name: 'pyright',
+    \   filetype: 'python',
+    \   path: '/sbin/pyright-langserver',
+    \   args: ['--stdio'],
+    \   workspaceConfig: #{
+    \       python: #{
+    \           pythonPath: '/usr/bin/python'
+    \       },
+    \   },
     \ }]
 autocmd User LspSetup call LspAddServer(lspServers)
 
