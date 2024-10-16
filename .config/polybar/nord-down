@@ -151,6 +151,7 @@ ramp-1 = 
 ramp-2 = 
 ramp-3 = 
 ramp-4 = 
+ramp-foreground = ${colors.success}
 
 
 ramp-0-foreground = ${colors.nord8}
