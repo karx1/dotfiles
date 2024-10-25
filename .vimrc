@@ -108,6 +108,13 @@ let lspServers = [#{
     \           pythonPath: '/usr/bin/python'
     \       },
     \   },
+    \ },
+    \ #{
+    \    name: 'clangd',
+    \    filetype: ['c', 'cpp'],
+    \    path: '/sbin/clangd',
+    \    args: ['--background-index', '--clang-tidy'],
+    \    syncInit: v:true,
     \ }]
 autocmd User LspSetup call LspAddServer(lspServers)
 
