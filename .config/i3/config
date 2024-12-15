@@ -84,7 +84,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
-bindsym $mod+Shift+Return exec MOZ_USE_XINPUT2=1 firefox-developer-edition
+bindsym $mod+Shift+Return exec MOZ_USE_XINPUT2=1 zen-browser
 bindsym $mod+Control+Return exec chromium --enable-features=TouchpadOverscrollHistoryNavigation
 
 # kill focused window
