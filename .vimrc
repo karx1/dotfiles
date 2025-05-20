@@ -10,6 +10,7 @@ set hlsearch
 set incsearch
 set cursorline
 set relativenumber
+set modeline
 
 " install vim-plug if it's not installed already
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -57,7 +58,7 @@ let g:NERDTreeMinimalUI = 1
 let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = '<'
-let g:NERDTreeIgnore = ['\.class[[file]]']
+let g:NERDTreeIgnore = ['\.class[[file]]', '\.o[[file]]']
 
 " airline settings
 let g:airline_powerline_fonts = 1
@@ -113,7 +114,7 @@ let lspServers = [#{
     \    name: 'clangd',
     \    filetype: ['c', 'cpp'],
     \    path: '/sbin/clangd',
-    \    args: ['--background-index', '--clang-tidy'],
+    \    args: ['--background-index', '--clang-tidy', '--enable-config'],
     \    syncInit: v:true,
     \ }]
 autocmd User LspSetup call LspAddServer(lspServers)
@@ -156,4 +157,3 @@ let java_highlight_all = 1
 highlight link javaScopeDecl Statement
 highlight link javaType Type
 " highlight link javaDocTags PreProc
-
