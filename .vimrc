@@ -157,3 +157,6 @@ let java_highlight_all = 1
 highlight link javaScopeDecl Statement
 highlight link javaType Type
 " highlight link javaDocTags PreProc
+
+" rustfmt settings
+let g:rustfmt_edition = '2024'
