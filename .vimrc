@@ -165,3 +165,12 @@ highlight link javaType Type
 
 " rustfmt settings
 let g:rustfmt_edition = '2024'
+
+" closetag settings
+let g:closetag_filenames = "*.html,*.jsx,*.tsx,*.xml"
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ 'typescriptreact': 'jsxRegion,tsxRegion',
+    \ 'javascriptreact': 'jsxRegion',
+    \ }
