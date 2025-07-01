@@ -36,6 +36,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " requir
 Plug 'alvan/vim-closetag'
 Plug 'normen/vim-pio'
 Plug 'mhinz/vim-signify'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html', 'javascriptreact', 'typescriptreact'] }
 call plug#end()
 
 colorscheme nord
@@ -165,6 +168,10 @@ highlight link javaType Type
 
 " rustfmt settings
 let g:rustfmt_edition = '2024'
+
+" prettier settings
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
 
 " closetag settings
 let g:closetag_filenames = "*.html,*.jsx,*.tsx,*.xml"
