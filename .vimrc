@@ -116,6 +116,11 @@ let lspServers = [#{
     \    path: '/sbin/clangd',
     \    args: ['--background-index', '--clang-tidy', '--enable-config'],
     \    syncInit: v:true,
+    \ },
+    \ #{name: 'tsserver',
+    \   filetype: ['javascript', 'typescript', 'javascriptreact', 'typescriptreact'],
+    \   path: '/sbin/typescript-language-server',
+    \   args: ['--stdio'],
     \ }]
 autocmd User LspSetup call LspAddServer(lspServers)
 
