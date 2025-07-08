@@ -61,7 +61,7 @@ let g:NERDTreeMinimalUI = 1
 let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = '<'
-let g:NERDTreeIgnore = ['\.class[[file]]', '\.o[[file]]']
+let g:NERDTreeIgnore = ['\.class[[file]]', '\.o[[file]]', '^node_modules$[[dir]]']
 
 " airline settings
 let g:airline_powerline_fonts = 1
