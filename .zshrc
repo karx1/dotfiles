@@ -27,7 +27,10 @@ set -o vi
 PATH=$PATH:/home/yashkarandikar/bin
 PATH=$PATH:/home/yashkarandikar/.local/bin
 PATH=$PATH:/home/yashkarandikar/.cargo/bin
+PATH=$PATH:/opt/android-sdk/platform-tools
 autoload -U +X bashcompinit && bashcompinit
+
+export ANDROID_HOME=$HOME/Android/Sdk
 
 alias mosh="mosh --predict=experimental"
 alias sys="sudo systemctl"
