@@ -36,7 +36,10 @@ exec --no-startup-id xinput set-prop "Microsoft Microsoft Ergonomic Mouse" "libi
 # exec xrandr --output eDP1 --scale 0.8x0.8
 exec --no-startup-id ~/.fehbg &
 # bindsym $mod+s exec scrot -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
+
 bindsym $mod+s exec --no-startup-id flameshot gui
+bindsym Print exec --no-startup-id flameshot gui
+
 bindsym --release $mod+c exec --no-startup-id xcolor | head -c -1 | xclip -selection clip
 focus_follows_mouse no
 
