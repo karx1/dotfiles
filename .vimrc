@@ -124,6 +124,11 @@ let lspServers = [#{
     \   filetype: ['javascript', 'typescript', 'javascriptreact', 'typescriptreact'],
     \   path: '/sbin/typescript-language-server',
     \   args: ['--stdio'],
+    \ },
+    \ #{name: 'texserver',
+    \   filetype: ['plaintex', 'tex'],
+    \   path: '/sbin/texlab',
+    \   args: ['run'],
     \ }]
 autocmd User LspSetup call LspAddServer(lspServers)
 
